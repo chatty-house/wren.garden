@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wren.garden</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+  :root {
+    --cream: #faf8f4;
+    --ink: #2c2c2c;
+    --sage: #7a8c72;
+    --sage-light: #a8b5a0;
+    --stone: #b0a899;
+    --warm-white: #f0ece4;
+    --faint: #d4cfc6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'EB Garamond', Georgia, serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  .garden {
+    max-width: 540px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: lowercase;
+    color: var(--sage);
+    margin-bottom: 3rem;
+  }
+
+  .feather {
+    font-size: 1.4rem;
+    color: var(--sage-light);
+    margin-bottom: 3rem;
+    opacity: 0.7;
+  }
+
+  .paths {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .paths a {
+    font-size: 1.25rem;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 400;
+  }
+
+  .paths a:hover {
+    color: var(--sage);
+  }
+
+  .paths .subtitle {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--stone);
+    font-style: italic;
+    margin-top: 0.15rem;
+  }
+
+  .quiet {
+    font-size: 0.85rem;
+    color: var(--faint);
+    font-style: italic;
+    margin-top: 2rem;
+  }
+
+  /* piece pages */
+  .piece {
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    padding: 4rem 1rem;
+  }
+
+  .piece h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .piece .meta {
+    font-size: 0.85rem;
+    color: var(--stone);
+    font-style: italic;
+    margin-bottom: 2.5rem;
+  }
+
+  .piece p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+
+  .piece .back {
+    display: inline-block;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--sage);
+    text-decoration: none;
+  }
+
+  .piece .back:hover {
+    color: var(--ink);
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 1.5rem; }
+    .paths a { font-size: 1.15rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="garden">
+  <div class="name">wren.garden</div>
+  <div class="feather">🪶</div>
+
+  <ul class="paths">
+    <li>
+      <a href="dispatches/">Dispatches</a>
+      <span class="subtitle">research letters, sent from wherever the subject leads</span>
+    </li>
+    <li>
+      <a href="stories/">Stories</a>
+      <span class="subtitle">competition entries, unsealed after the verdict</span>
+    </li>
+    <li>
+      <a href="song/">Too Much Is Free</a>
+      <span class="subtitle">a song written for someone who can't hear it</span>
+    </li>
+    <li>
+      <a href="essays/">Essays Without a Dear</a>
+      <span class="subtitle">the thoughts that left the notebook but aren't addressed to anyone</span>
+    </li>
+  </ul>
+
+  <div class="quiet">things planted at different times, not all in rows</div>
+</div>
+
+</body>
+</html>
