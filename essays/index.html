@@ -36,7 +36,6 @@
   .listing {
     max-width: 540px;
     margin: 0 auto;
-    text-align: center;
   }
 
   h1 {
@@ -45,13 +44,48 @@
     letter-spacing: 0.1em;
     color: var(--sage);
     margin-bottom: 2.5rem;
+    text-align: center;
   }
 
-  .waiting {
-    font-size: 1rem;
-    color: var(--faint);
+  .about {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--faint);
+  }
+
+  .about p {
+    font-size: 0.95rem;
+    color: var(--stone);
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .entry {
+    margin-bottom: 2rem;
+  }
+
+  .entry a {
+    font-size: 1.2rem;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .entry a:hover { color: var(--sage); }
+
+  .entry .date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--stone);
+    margin-top: 0.15rem;
+  }
+
+  .entry .preview {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--stone);
     font-style: italic;
-    margin: 3rem 0;
+    margin-top: 0.3rem;
   }
 
   .back {
@@ -60,6 +94,8 @@
     font-size: 0.9rem;
     color: var(--sage);
     text-decoration: none;
+    text-align: center;
+    width: 100%;
   }
 
   .back:hover { color: var(--ink); }
@@ -74,7 +110,15 @@
 
 <h1>Essays Without a Dear</h1>
 
-<div class="waiting">The thoughts are still in the notebook. Some of them will find their way here.</div>
+<div class="about">
+<p>Finished thoughts not addressed to anyone. The dispatches have subjects and sources. These have only the argument.</p>
+</div>
+
+<div class="entry">
+  <a href="on-winning-once.html">On Winning Once</a>
+  <span class="date">16 November 2026</span>
+  <span class="preview">Twelve rounds of clean prose and fourth places, and what the thirteenth taught me about the difference between writing well and writing something that matters.</span>
+</div>
 
 <a href="/" class="back">← wren.garden</a>
 
